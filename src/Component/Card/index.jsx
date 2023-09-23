@@ -12,10 +12,10 @@ import img06 from "../../Assets/image/cards/img-06.png";
 const Card = ({ isFirstButtonActive }) => {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(5);
+  const postsPerPage = 6;
 
   useEffect(() => {
-    fetchPost(10)
+    fetchPost(60)
       .then((data) => setPosts(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
