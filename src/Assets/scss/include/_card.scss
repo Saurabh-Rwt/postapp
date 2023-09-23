@@ -1,0 +1,102 @@
+.card-wrapper {
+  padding: 3rem 0;
+  .card {
+    position: relative;
+    height: calc(100% - 10px);
+    margin-bottom: 1rem;
+    padding: 1rem 0.8rem;
+    .title {
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+
+    .text{
+        margin-bottom: 5px;
+    }
+
+    .time{
+        font-size: 14px;
+        font-weight: 600;
+        color: $card-text;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .cross {
+      background: transparent;
+      border: none;
+      color: rgb(228, 20, 20);
+      font-size: 15px;
+      font-weight: 600;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      background-color: $white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      transition: 0.3s all ease-in-out;
+
+      &:hover{
+        background-color: $primary-color;
+      }
+    }
+
+    .card-body{
+      padding: 0;
+    }
+  }
+
+  .row {
+    display: none;
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+.post-wrap {
+  background: $white;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  .content {
+    .title {
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+    .text {
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    .time {
+      font-size: 16px;
+      font-weight: 600;
+      color: $card-text;
+    }
+  }
+
+  .cross {
+    position: absolute;
+    right: -2.5rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: none;
+    color: red;
+    background: #fff;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
+}

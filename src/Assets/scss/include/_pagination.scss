@@ -1,0 +1,23 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .page-item {
+        .page-btn{
+            height: 2rem;
+            width: 2rem;
+            color: $white;
+            background-color: $card-text;
+            border: none;
+            border-radius: 50%;
+        }
+       &.active{
+            .page-btn{
+                background-color: $white;
+                color: #000;
+            }
+        }
+    }
+}
